@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malicious URL Detector - Result</title>
+</head>
+<body>
+    <h2>Result:</h2>
+    <p>Prediction: {{ prediction }}</p>
+    <form action="/report" method="post">
+        <label for="url">Enter URL:</label>
+        <input type="text" name="url" id="url" required>
+        <label for="option">Is the URL Suspicious? </label>
+        <select id="option" name="option">
+            <option value="yes"> Yes </option>
+            <option value="no"> No </option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

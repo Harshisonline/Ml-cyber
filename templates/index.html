@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/index.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <nav>
+      <div id="name">Detectify</div>
+      <div>
+        <ul>
+          <li>Home</li>
+          <li><a href="about.html">About</a></li>
+          <li>Github</li>
+        </ul>
+      </div>
+      <div>time is here</div>
+    </nav>
+    <main>
+      <div class="container">
+        <h1 id="heading">Building a Gateway to security</h1>
+      </div>
+      <form id="input" action="/predict" method="post">
+        <input
+          type="text"
+          name="url"
+          id="urlInput"
+          placeholder="Enter URL"
+          required
+        />
+        <div id="container2">
+          <button type="submit">Check Safety</button>
+          <div id="result"></div>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <div id="flexbox">
+        <div class="flexbox">
+          <h2>Details about ML model</h2>
+          <pre>
+1)This model is based Logistic on Regression.
+2)Addresses cybersecurity concerns by identifying
+ potentially harmful URLs.
+ 3)Empowers users to make informed about decisions
+  when browsing
+              </pre
+          >
+        </div>
+        <div class="flexbox">
+          <h2>Details about ML mode</h2>
+          <pre>
+ 1)This model is based Logistic on Regression.
+ 2)Addresses cybersecurity concerns by identifying
+  potentially harmful URLs.
+ 3)Empowers users to make informed about decisions
+   when browsing
+              </pre>
+        </div>
+        <div class="flexbox">
+          <h2>Details about ML model</h2>
+<pre>
+  1)This model is based Logistic on Regression.
+  2)Addresses cybersecurity concerns by identifying
+   potentially harmful URLs.
+  3)Empowers users to make informed about decisions
+    when browsing
+               </pre>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

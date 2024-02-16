@@ -1,0 +1,54 @@
+.navbar{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+body{
+    background-size: cover;
+    background-image: url("background.jpeg");
+}
+    
+main{
+    padding: 10vh;
+    flex-wrap: wrap;
+}
+div{
+    margin: 20px;
+    text-align: center;
+}
+.card {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideIn 1.5s ease forwards;
+    transition: opacity 1.5s ease, transform 0.5s ease; 
+}
+
+.card:hover {
+    opacity: 1;
+    transform: translateY(0);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1); 
+}
+
+.main:hover .card:not(:hover) {
+    opacity: 0.1; 
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#heading{
+    font-size: 35px;
+    padding-top: 20vh;
+    color:white;
+    text-align: center;
+    color: white;
+    display: block;
+}
+#branding{
+    font-size: 25px;
+}
